@@ -34,6 +34,10 @@ class ImageService {
                 service.request(url: url, method: .get, completion: { result in
                     switch result {
                     case .success(let data):
+                        // FIXME: Becasue of SVG format, there is no image :(
+                        // Trying to implement SVGKit, but it's slow and it
+                        // modifying the autolayout engine from a background thread after the engine was accessed from the main thread.
+                        // There is a way to use WKWebView in every cell, but it's very slow and inefficient
                         if let image = UIImage(data: data) {
                             let value: ImageServiceCompletion = (image, url.absoluteString)
                             completion(value)
