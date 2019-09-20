@@ -14,7 +14,7 @@ class CountriesFeedCell: UICollectionViewCell {
     @IBOutlet private weak var nameEnglishLabel: UILabel!
     @IBOutlet private weak var nameLocalLabel: UILabel!
     @IBOutlet private weak var populationLabel: UILabel!
-    @IBOutlet private weak var nationalFlagImageView: UIImageView!
+    @IBOutlet private weak var nationalFlagSVGView: SVGView!
     
     func configure(model: CountriesFeedItem) {
         nameEnglishLabel.text = model.nameEnglish
@@ -26,14 +26,7 @@ class CountriesFeedCell: UICollectionViewCell {
     // MARK: - Private
     
     private func setupImage(with urlString: String) {
-        guard let url = URL(string: urlString) else { return }
-        
-        ImageService.loadImage(from: url) { [weak self] completion in
-            let (image, urlString) = completion
-            guard let loadedImage = image, url.absoluteString == urlString else { return }
-            
-            self?.nationalFlagImageView.image = loadedImage
-        }
+        nationalFlagSVGView.load(urlString: urlString)
     }
 }
 

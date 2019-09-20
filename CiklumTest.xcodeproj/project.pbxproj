@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		277D2E462334FB94009B705F /* SVGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277D2E452334FB94009B705F /* SVGView.swift */; };
 		875A6471232E95B7005A5F50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875A6470232E95B7005A5F50 /* AppDelegate.swift */; };
 		875A6478232E95BA005A5F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 875A6477232E95BA005A5F50 /* Assets.xcassets */; };
 		875A647B232E95BA005A5F50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 875A6479232E95BA005A5F50 /* LaunchScreen.storyboard */; };
@@ -46,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		277D2E452334FB94009B705F /* SVGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGView.swift; sourceTree = "<group>"; };
 		875A646D232E95B7005A5F50 /* CiklumTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiklumTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		875A6470232E95B7005A5F50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		875A6477232E95BA005A5F50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		277D2E472334FBBB009B705F /* SVGView */ = {
+			isa = PBXGroup;
+			children = (
+				277D2E452334FB94009B705F /* SVGView.swift */,
+			);
+			path = SVGView;
+			sourceTree = "<group>";
+		};
 		875A6464232E95B7005A5F50 = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				875A6493232E9DB8005A5F50 /* Cells */,
+				277D2E472334FBBB009B705F /* SVGView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -359,6 +370,7 @@
 				875A6471232E95B7005A5F50 /* AppDelegate.swift in Sources */,
 				875A648A232E9900005A5F50 /* CountriesFeedViewController.swift in Sources */,
 				875A64C6232EE383005A5F50 /* ImageCache.swift in Sources */,
+				277D2E462334FB94009B705F /* SVGView.swift in Sources */,
 				875A64AC232ED28B005A5F50 /* CountriesFeedAPIImpl.swift in Sources */,
 				875A64B6232ED602005A5F50 /* CountryEntity.swift in Sources */,
 				875A64B3232ED5AF005A5F50 /* CountriesFeedParserType.swift in Sources */,
@@ -508,6 +520,7 @@
 				DEVELOPMENT_TEAM = AB88NX78AH;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/CiklumTest/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -527,6 +540,7 @@
 				DEVELOPMENT_TEAM = AB88NX78AH;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/CiklumTest/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
