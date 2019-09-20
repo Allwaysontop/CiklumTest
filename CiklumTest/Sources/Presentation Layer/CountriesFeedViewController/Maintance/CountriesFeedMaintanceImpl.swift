@@ -23,7 +23,7 @@ class CountriesFeedMaintanceImpl: NSObject, CountriesFeedMaintanceType {
         return collectionView
     }()
     
-    let initialView: UIView
+    weak var initialView: UIView!
     let manager: CountriesFeedManager
     weak var delegate: CountriesFeedMaintanceDelegate?
     
@@ -39,8 +39,8 @@ class CountriesFeedMaintanceImpl: NSObject, CountriesFeedMaintanceType {
     
     func loadData() {
         manager.loadCountries { countries, error in
-            DispatchQueue.main.async {
-                self.reloadData()
+            DispatchQueue.main.async { [weak self] in
+                self?.reloadData()
             }
         }
     }
