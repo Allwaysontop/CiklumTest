@@ -8,3 +8,7 @@ You can take the application UI and functionality as far as your imagination (an
 • List of all countries with basic details on each such as: Name (English and local), national flag, population
 • Details of a single country, with extended geographical and social introduction
 • Make sure the application is adapted to properly run on various screen sizes and devices
+
+TODO:
+1. Load SVG images
+2. Change app architecture from MVC to MVP
